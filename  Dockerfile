@@ -1,0 +1,7 @@
+FROM hasura/graphql-engine:v2.0.0
+
+ENV HASURA_GRAPHQL_DATABASE_URL=postgresql://event_buddy_user:nGixWLFVBNtYweeDG5Kc3ptEKGvaqCYW@dpg-cqjs4qij1k6c73a2vtfg-a.oregon-postgres.render.com/event_buddy
+ENV HASURA_GRAPHQL_ENABLE_CONSOLE=true
+ENV HASURA_GRAPHQL_ADMIN_SECRET=g7ogMec1pYSEneb0owkp8rPNhw/pbBIGEf38I3bKZnQ=
+
+CMD ["graphql-engine", "serve"]
